@@ -1,0 +1,283 @@
+:root {
+  --main-color: #402A72;
+  --sub-color1: #DF3026;
+  --sub-color2: #EDAF1C;
+  --bg-color: #74D0EE;
+}
+
+/* style.css */
+/* @import url('https://fonts.googleapis.com/css2?family=Yeon+Sung&display=swap'); */
+
+/* @import url('https://fonts.googleapis.com/css2?family=Noto+Sans+KR:wght@300;400;500&display=swap'); */
+
+* {
+  margin: 0;
+  padding: 0;
+}
+
+ul {
+  list-style-type: none;
+}
+
+a {
+  text-decoration: none;
+}
+
+body {
+  font-family: 'Noto Sans KR', sans-serif;
+  text-align: center;
+}
+
+section h2 {
+  font-family: 'Yeon Sung', cursive;
+  color: var(--main-color);
+  color: #fff;
+  font-size: 28px;
+  line-height: 40px;
+  margin-bottom: 20px;
+  font-weight: normal;
+}
+
+header {
+  background-color: #74D0EE;
+  background-image: url(images/header-bg.jpg);
+  background-size: cover;
+  /* 높이값 = 28%, vh(viewport height) */
+  height: 28vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+}
+
+header .logo {
+  width: 120px;
+}
+
+header h1 {
+  font-size: 28px;
+  font-family: 'Yeon Sung', cursive;
+  color: var(--main-color);
+}
+
+header h1 > span {
+  font-size: 18px;
+}
+
+#title {
+  background: #ccc;
+  height: 100vh;
+}
+
+#title .title-photo {
+  height: 50vh;
+  /* outline: 2px solid #000; */
+}
+
+#title .title-photo img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+#title .title-footer {
+  background: #fff;
+  height: 22vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+}
+
+#title .title-footer .date {
+  font-weight: 500;
+  font-size: 18px;
+  margin-bottom: 10px;
+}
+
+#title .title-footer .address {
+  font-size: 16px;
+}
+
+
+section .bar {
+  height: 40px; 
+  width: 2px;
+  /* background: var(--main-color); */
+  background: #fff;
+  margin: 0 auto;
+  margin-bottom: 20px;
+}
+
+/* 초대글 영역 */
+#invitation {
+  padding-top: 50px;
+  padding-bottom: 50px;
+  background: var(--bg-color);
+  padding-left: 48px;
+  padding-right: 48px;
+}
+
+#invitation p {
+  margin-bottom: 1em;
+  color: var(--main-color);
+}
+
+.send-msg-box {
+  /* background: #ccc; */
+  display: flex;
+  margin-top: 55px;
+}
+
+.send-btn {
+  flex: 1;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: #000;
+}
+
+.send-btn i {
+  margin-right: 10px;
+}
+
+/* 갤러리 */
+#gallery {
+  padding-top: 50px;
+  padding-bottom: 50px;
+}
+
+#gallery .bar {
+  background-color: var(--main-color);
+}
+
+#gallery h2 {
+  color: var(--main-color);
+}
+
+#gallery > figure {
+  background: var(--sub-color2);
+  /* outline: 2px solid red; */
+  padding: 30px 15px;
+}
+
+#gallery > figure > .main-photo > img {
+  width: 100%;
+  height: 287px;
+  object-fit: cover;
+  display: block;
+}
+
+#gallery > figure > .img-list {
+  margin-top: 15px;
+  display: flex;
+  justify-content: space-between;
+}
+
+#gallery > figure > .img-list > li {
+  width: calc((100% - 30px) / 4);
+  height: 60px;
+}
+
+#gallery > figure > .img-list > li > a > img {
+  width: 100%;
+  height: 60px;
+  object-fit: cover;
+}
+
+/* 오시늘 길 */
+#location {
+  padding-top: 50px;
+  padding-bottom: 50px;
+  background-color: var(--bg-color);
+}
+
+#map {
+  margin-bottom: 20px;
+}
+
+#location p {
+  color: var(--main-color);
+}
+
+/* 축하해주기 */
+#congrat {
+  padding-top: 50px;
+  /* padding-bottom: 50px; */
+  background-color: #fff;
+}
+
+#congrat .bar {
+  background: var(--main-color);
+}
+
+#congrat h2 {
+  color: var(--main-color);
+}
+
+.contact-box-wrap > .contact-box:first-child {
+  background: rgba(235, 35, 147, 0.9);;
+}
+
+.contact-box-wrap > .contact-box:last-child {
+  background: #4FABD8;
+}
+
+.contact-box > span {
+  color: #fff;
+}
+
+.contact-box-wrap {
+  display: flex;
+  margin-bottom: 50px;
+  padding-left: 15px;
+  padding-right: 15px;
+}
+
+.contact-box {
+  flex: 1;
+  padding-top: 23px;
+  padding-bottom: 23px;
+  border-radius: 13px;
+}
+
+.contact-box:first-child {
+  margin-right: 10px;
+}
+
+.icon-box > a:first-child {
+  margin-right: 20px;
+}
+
+.sns-group {
+  background: #4FABD8;
+  padding: 30px 40px;
+  display: flex;
+  justify-content: space-between;
+}
+
+.sns-group .icon-link {
+  color: #fff;
+}
+
+.splash-screen.on{
+  position: fixed;
+  z-index: 999;
+  background: var(--bg-color);
+  width: 100vw;
+  height: 100vh;
+  left: 0;
+  top: 0;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.splash-screen{
+  display: none;
+}
+
+.splash-screen > img{
+  width: 140px;
+  height: 140px;
+}
